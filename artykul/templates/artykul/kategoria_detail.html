@@ -1,0 +1,14 @@
+{% extends 'artykul/base.html' %}
+
+{% block content %}
+
+{% for Kategoria in lista %}
+        <h1>hej<a href="{% url 'kategoria' pk=Kategoria.pk %}">
+          {{ Kategoria.nazwa }}
+        </a></h1>
+
+{% endfor %}
+
+
+
+{% endblock content %}

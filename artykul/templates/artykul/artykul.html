@@ -1,0 +1,14 @@
+{% extends 'artykul/base.html' %}
+{% block content %}
+
+artykul.html
+{% for instance in kategoria %}
+
+        <h1><a href="{% url 'kategori' pk=instance.pk %}">
+          {{ instance.nazwa }}
+        </a></h1>
+
+{% endfor %}
+
+
+  {% endblock content %}

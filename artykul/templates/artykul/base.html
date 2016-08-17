@@ -1,0 +1,65 @@
+{% load staticfiles %}
+
+<html>
+    <head>
+        <title>Szkoła Więckowy</title>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="{% static 'css/style.css' %}">
+	<link href='http://fonts.googleapis.com/css?family=Alex+Brush&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    </head>
+    <body>
+      <div class="strona">
+    <a href="/kategoria/2"><div class="naglowek">
+      <h1><a href="/kategoria/2">Szkoła w Więckowach</a></h1>
+    </div></a>
+
+    <div class="menu">
+          <!-- menu -->
+          <ul>
+          {% for instance in categories%}
+          <li>
+          <a href="{% url 'kategori' pk=instance.pk %}">
+            {{ instance.nazwa }}
+          </a></li>
+          {% endfor %}
+        </ul>
+          </br>
+          </br>
+          <!-- koniec_menu -->
+    </div>
+    <div class="tresc">
+          {% block content %}
+
+{% endblock content %}
+
+    </div>
+
+    <div class="stopka">
+<!-- stopka -->
+      <!-- <div class="footer navbar-fixed-bottom"> -->
+          <div style="background-color: dodgerblue; width: 100%; color: #ffffff; text-align:center; line-height:250%; font-size:smaller;">
+              <strong>Mateusz Zarzycki Copyright © 2016 All rights reserved.</strong>
+          </div>
+      <!-- </div> -->
+
+    </div>
+
+
+
+        <!-- <div class="page-header"> -->
+        <!-- <center><h1><a href="/">Szkoła w Więckowach</a></h1></center> -->
+    <!-- </div> -->
+
+    <!-- <div class="content container">
+        <div class="row">
+            <div class="col-md-8"> -->
+
+        <!-- </div>
+        </div>
+    </div> -->
+
+
+  </div>
+    </body>
+</html>

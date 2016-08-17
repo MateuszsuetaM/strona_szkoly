@@ -1,0 +1,27 @@
+{% extends 'artykul/base.html' %}
+{% load staticfiles %}
+category_detail
+{% block content %}
+{{artykul.tytul}}
+</br>
+{{artykul.zawartosc}}
+</br>
+{{artykul.data_dodania}}
+</br>
+dodał: {{artykul.autor}}
+</br>
+elomelo
+<!-- <img src="static '{{artykul.obrazy}}'"> -->
+<!-- <img src="{{profile.picture.url}}"> -->
+<!-- <img src="/home/psp/static/{{artykul.obrazy}}"> -->
+{% for photo in gallery.public %}
+</br>
+<a class="thumb" name="{{ photo.title }}" title="{{ photo.title }}" href="{{ photo.get_display_url }}"><img src="{{ photo.get_thumbnail_url }}" alt="{{ photo.title }}"/></a>
+
+{{ photo.title }}
+Test{{ photo.caption }}
+                    {% endfor %}
+                    {%for instance in photos%}
+                    {Photo.photo}
+                    {%endfor%}
+  pss                    {% endblock content %}

@@ -1,0 +1,18 @@
+{% extends 'artykul/base.html' %}
+{% load staticfiles %}
+
+{% block content %}
+kategorie
+{% for Artykul in category.artykul_set.all %}
+  <div class="date">
+jol    {{Artykul.data_dodania}}
+  </div>
+  <h1><a href="{% url 'artykul' pk=Artykul.pk %}"> {{ Artykul.tytul}} </a></h1>
+  <p>{{Artykul.zawartosc}}</p>
+  <p>autor: {{Artykul.autor}}</p>
+<!-- <img src="{{Artykul.obrazy}}"></img> -->
+<img src='{% static "{{Artykul.obrazy.url}}" %}' ></img>
+
+{% endfor %}
+
+{% endblock content %}

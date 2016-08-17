@@ -1,0 +1,92 @@
+body {
+  /*background-color: #888888;*/
+  color:white;
+  /*background-image: url(static 'zdjecia/owczarek.png');*/
+}
+.strona{
+  margin-right:22%;
+  margin-left:6%;
+  /*margin:auto;*/
+  /*border : 1px solid black;*/
+  /*width:958;*/
+  width:1058;
+  padding: 0px;
+  /*background-color: red;*/
+  /*overflow: hidden;*/
+}
+.naglowek{
+  /*width:958;*/
+  width:1058;
+  height:240px;
+  background-color: blue;
+  /*border: 1px solid black;*/
+  margin:auto;
+
+}
+.tresc{
+  /*border : 1px solid black;*/
+  height:1000;
+  /*width: 759;*/
+  width:859;
+  float: right;
+  background-color: #999999;
+  marigin-left: 50%;
+}
+.stopka{
+  clear: both;
+  background-color: blue;
+  width:1058;
+  /*width:1058;*/
+  float:right;
+}
+
+.menu{
+  width: 199;
+  height: 1000;
+  padding: 0px;
+  margin: 0;
+  border: none;
+  float: left;
+  /*background-color: green;*/
+  display: block;
+	list-style: none;
+  text-decoration: none;
+	background-color: #777777;
+	/*padding-left: 5px;*/
+  /*padding-right: 5px;*/
+}
+ul, ul li {
+	display: block;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+ul {
+	width: 200px;
+}
+
+ul a:link, ul a:visited {
+	display: block;
+	width: auto;/*186*/
+  text-align: inherit;
+	text-decoration: none;
+  font-size: 20;
+  font-family: arial;
+	background-color: #999999;
+	color: white;
+	/*padding: 5px;*/
+	border: 0px outset #402232;
+}
+
+ul a:hover {
+	border-style: inset;
+	padding: 7px 3px 3px 7px;
+}
+.date {
+    float: right;
+    color: #828282;
+}
+h1, h2, h3, h4 {
+    font-family: 'Lobster', cursive;
+}
